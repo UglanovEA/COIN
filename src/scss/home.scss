@@ -14,9 +14,10 @@
 	// .page-registration__body
 	&__body {
 		width: 30%;
-		@include adaptiveValue("padding-top", 150, 30, 1980, 1366, 1);
-		@include adaptiveValue("padding-bottom", 150, 30, 1980, 1366, 1);
-		@include adaptiveValue("padding-right", 138, 50, 1980, 1366, 1);
+		@include adaptiveValue("padding-top", 150, 30, 1980, 1024, 1);
+		@include adaptiveValue("padding-bottom", 150, 30, 1980, 1024, 1);
+		@include adaptiveValue("padding-right", 138, 50, 1980, 1024, 1);
+		@include adaptiveValue("padding-left", 138, 0, 1980, 1024, 1);
 	}
 	// .page-registration__header
 	&__header {
@@ -67,23 +68,23 @@
 }
 .header-registration {
 	&:not(:last-child) {
-		@include adaptiveValue("margin-bottom", 60, 25, 1980, 1366, 1);
+		@include adaptiveValue("margin-bottom", 60, 25, 1980, 1024, 1);
 	}
 	// .header-registration__title
 	&__title {
 		font-family: "SFProDisplay";
 		font-weight: 600;
-		@include adaptiveValue("font-size", 48, 30, 1980, 1366, 1);
+		@include adaptiveValue("font-size", 48, 30, 1980, 1024, 1);
 		line-height: 1.15;
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 22, 10, 1980, 1366, 1);
+			@include adaptiveValue("margin-bottom", 22, 10, 1980, 1024, 1);
 		}
 	}
 	// .header-registration__text
 	&__text {
 		color: rgba(42, 56, 95, 0.6);
 		font-weight: 500;
-		@include adaptiveValue("font-size", 24, 18, 1980, 1366, 1);
+		@include adaptiveValue("font-size", 24, 18, 1980, 1024, 1);
 		line-height: 1.4;
 		& a {
 			color: $colorBlue;
@@ -92,15 +93,15 @@
 }
 .form-body {
 	width: rem(297);
-	@include adaptiveValue("width", 297, 280, 1980, 1366, 1);
+	@include adaptiveValue("width", 297, 280, 1980, 1024, 1);
 	&:not(:last-child) {
-		@include adaptiveValue("margin-bottom", 25, 20, 1980, 1366, 1);
+		@include adaptiveValue("margin-bottom", 25, 20, 1980, 1024, 1);
 	}
 	// .form-body__subtitle
 	&__subtitle {
 		font-family: "SFProDisplay";
 		font-weight: 500;
-		@include adaptiveValue("font-size", 30, 24, 1980, 1366, 1);
+		@include adaptiveValue("font-size", 30, 24, 1980, 1024, 1);
 		&:not(:last-child) {
 			margin-bottom: em(20, 30);
 		}
