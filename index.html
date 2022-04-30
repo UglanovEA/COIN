@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220430180123">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220430232129">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,51 +58,55 @@
 		<main class="page">
 			<section class="page-registration">
 				<div class="page-registration__content">
-					<div class="page-registration__header header-registration">
-						<h2 class="header-registration__title">Создайте свой профиль</h2>
-						<div class="header-registration__text">
-							Уже есть аккаунт?
-							<a href="#!">Войти</a>
-						</div>
-					</div>
-					<div class="page-registration__body form-body">
-						<h3 class="form-body__subtitle">Регистрация</h3>
-						<div data-tabs class="form-body">
-							<nav data-tabs-titles class="form-body__navigation">
-								<button type="button" class="form-body__title _tab-active btn">По номеру</button>
-								<button type="button" class="form-body__title btn">По e-mail</button>
-							</nav>
-							<div data-tabs-body class="form-body__content">
-								<div class="form-body__body">
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите номер телефона" class="form-body__input" />
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите ваш пароль" class="form-body__input" />
-								</div>
-								<div class="form-body__body">
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите e-mail" class="form-body__input" />
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Придумайте пароль" class="form-body__input" />
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Повторите пароль" class="form-body__input" />
+					<div class="page-registration__container">
+						<div class="page-registration__body">
+							<div class="page-registration__header header-registration">
+								<h2 class="header-registration__title">Создайте свой профиль</h2>
+								<div class="header-registration__text">
+									Уже есть аккаунт?
+									<a href="#!">Войти</a>
 								</div>
 							</div>
+							<div class="page-registration__form form-body">
+								<h3 class="form-body__subtitle">Регистрация</h3>
+								<div data-tabs class="form-body">
+									<nav data-tabs-titles class="form-body__navigation">
+										<button type="button" class="form-body__title _tab-active btn">По номеру</button>
+										<button type="button" class="form-body__title btn">По e-mail</button>
+									</nav>
+									<div data-tabs-body class="form-body__content">
+										<div class="form-body__body">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите номер телефона" class="form-body__input" />
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите ваш пароль" class="form-body__input" />
+										</div>
+										<div class="form-body__body">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите e-mail" class="form-body__input" />
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Придумайте пароль" class="form-body__input" />
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Повторите пароль" class="form-body__input" />
+										</div>
+									</div>
+								</div>
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__text">
+											Принимаю
+											<a href="#!">условия использования</a>
+										</span>
+									</label>
+								</div>
+								<button type="submit" class="form-body__button">Создать аккаунт</button>
+							</div>
 						</div>
-						<div class="checkbox">
-							<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
-							<label for="c_1" class="checkbox__label">
-								<span class="checkbox__text">
-									Принимаю
-									<a href="#!">условия использования</a>
-								</span>
-							</label>
-						</div>
-						<button type="submit" class="form-body__button">Создать аккаунт</button>
 					</div>
 				</div>
-				<div class="page-registration__img">
+				<div class="page-registration__image">
 					<picture><source srcset="img/background.webp" type="image/webp"><img src="img/background.jpg" alt="img" /></picture>
 				</div>
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20220430180123"></script>
+	<script src="js/app.min.js?_v=20220430232129"></script>
 </body>
 
 </html>
