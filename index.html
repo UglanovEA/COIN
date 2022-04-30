@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>CoinFlow</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220430180123">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#!" class="header__logo _icon-logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#!" class="menu__link">Торговля</a>
+							</li>
+							<li class="menu__item">
+								<a href="#!" class="menu__link">Финансы</a>
+							</li>
+							<li class="menu__item">
+								<a href="#!" class="menu__link">Купить криптовалюту</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__selects select-header">
+					<div class="select-header__item">
+						<div class="select-header__label">Язык:</div>
+						<select class="select-header__select">
+							<option value="1" selected>Рус</option>
+							<option value="2">Кит</option>
+						</select>
+					</div>
+					<div class="select-header__item">
+						<div class="select-header__label">Валюта:</div>
+						<select class="select-header__select">
+							<option value="1" selected>&#8381;</option>
+							<option value="2">&#165;</option>
+						</select>
+					</div>
+				</div>
+				<div class="header__buttons button-header">
+					<a href="#!" class="button-header__link btn _icon-enter">Войти</a>
+					<a href="#!" class="button-header__link btn btn-blue button-header__link-blue _icon-user">Регистрация</a>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page-registration">
+				<div class="page-registration__content">
+					<div class="page-registration__header header-registration">
+						<h2 class="header-registration__title">Создайте свой профиль</h2>
+						<div class="header-registration__text">
+							Уже есть аккаунт?
+							<a href="#!">Войти</a>
+						</div>
+					</div>
+					<div class="page-registration__body form-body">
+						<h3 class="form-body__subtitle">Регистрация</h3>
+						<div data-tabs class="form-body">
+							<nav data-tabs-titles class="form-body__navigation">
+								<button type="button" class="form-body__title _tab-active btn">По номеру</button>
+								<button type="button" class="form-body__title btn">По e-mail</button>
+							</nav>
+							<div data-tabs-body class="form-body__content">
+								<div class="form-body__body">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите номер телефона" class="form-body__input" />
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите ваш пароль" class="form-body__input" />
+								</div>
+								<div class="form-body__body">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите e-mail" class="form-body__input" />
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Придумайте пароль" class="form-body__input" />
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Повторите пароль" class="form-body__input" />
+								</div>
+							</div>
+						</div>
+						<div class="checkbox">
+							<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+							<label for="c_1" class="checkbox__label">
+								<span class="checkbox__text">
+									Принимаю
+									<a href="#!">условия использования</a>
+								</span>
+							</label>
+						</div>
+						<button type="submit" class="form-body__button">Создать аккаунт</button>
+					</div>
+				</div>
+				<div class="page-registration__img">
+					<picture><source srcset="img/background.webp" type="image/webp"><img src="img/background.jpg" alt="img" /></picture>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20220430180123"></script>
+</body>
+
+</html>
