@@ -9,7 +9,6 @@
 	&__container {
 		width: 100%;
 		display: flex;
-		// align-items: center;
 	}
 	// .page-registration__body
 	&__body {
@@ -17,8 +16,11 @@
 		@include adaptiveValue("padding-top", 150, 40, 1980, 1336, 1);
 		@include adaptiveValue("padding-bottom", 150, 10, 1980, 1336, 1);
 		@include adaptiveValue("padding-right", 138, 50, 1980, 1336, 1);
-		@media (max-width: em(1521)) {
-			padding-left: rem(50);
+		@media (max-width: em(1366)) {
+			@include adaptiveValue("padding-top", 40, 30, 1366, 1024, 1);
+			@include adaptiveValue("padding-bottom", 10, 10, 1366, 1024, 1);
+			@include adaptiveValue("padding-right", 50, 15, 1366, 1024, 1);
+			@include adaptiveValue("padding-left", 50, 15, 1366, 1024, 1);
 		}
 	}
 	// .page-registration__header
@@ -35,8 +37,8 @@
 		@media (min-width: $tablet) {
 			position: relative;
 			flex: 0 0 calc(((100vw - 30px) * 0.7) + 15px);
-			transform: translate(-100%);
-			padding-bottom: 55%;
+			transform: translate(-100%, 0px);
+			padding-bottom: 42%;
 			border-left: rem(1) solid #d2dcef;
 			&::before {
 				content: "";
@@ -60,11 +62,10 @@
 				bottom: 0;
 				left: 0;
 				object-fit: cover;
-				object-position: top;
 			}
 		}
-		@media (min-width: $pc) {
-			flex: 0 0 calc(50vw - (0.3 - 0.5) * 1520px);
+		@media (min-width: em(1550)) {
+			flex: 0 0 calc(50vw - (0.3 - 0.5) * 1550px);
 		}
 	}
 }
@@ -95,6 +96,9 @@
 }
 .form-body {
 	@include adaptiveValue("width", 297, 265, 1980, 1336, 1);
+	@media (max-width: em(1366)) {
+		@include adaptiveValue("width", 265, 255, 1366, 1024, 1);
+	}
 	&:not(:last-child) {
 		@include adaptiveValue("margin-bottom", 25, 15, 1980, 1336, 1);
 	}
