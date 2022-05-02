@@ -627,6 +627,7 @@ body {
 }
 
 .page-registration {
+  max-height: calc(100vh - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,15 +693,15 @@ body {
   max-width: 100%;
 }
 
-@supports (margin-bottom: clamp( 1.25rem , -3.9363354037rem  +  6.2111801242vw , 3.75rem )) {
+@supports (margin-bottom: clamp( 0.9375rem , -4.8971273292rem  +  6.9875776398vw , 3.75rem )) {
   .header-registration:not(:last-child) {
-    margin-bottom: clamp( 1.25rem , -3.9363354037rem  +  6.2111801242vw , 3.75rem );
+    margin-bottom: clamp( 0.9375rem , -4.8971273292rem  +  6.9875776398vw , 3.75rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 1.25rem , -3.9363354037rem  +  6.2111801242vw , 3.75rem )) {
+@supports not (margin-bottom: clamp( 0.9375rem , -4.8971273292rem  +  6.9875776398vw , 3.75rem )) {
   .header-registration:not(:last-child) {
-    margin-bottom: calc(1.25rem + 2.5 * (100vw - 83.5rem) / 40.25);
+    margin-bottom: calc(0.9375rem + 2.8125 * (100vw - 83.5rem) / 40.25);
   }
 }
 
@@ -710,27 +711,27 @@ body {
   line-height: 1.15;
 }
 
-@supports (font-size: clamp( 1.75rem , -0.8431677019rem  +  3.1055900621vw , 3rem )) {
+@supports (font-size: clamp( 1.625rem , -1.227484472rem  +  3.4161490683vw , 3rem )) {
   .header-registration__title {
-    font-size: clamp( 1.75rem , -0.8431677019rem  +  3.1055900621vw , 3rem );
+    font-size: clamp( 1.625rem , -1.227484472rem  +  3.4161490683vw , 3rem );
   }
 }
 
-@supports not (font-size: clamp( 1.75rem , -0.8431677019rem  +  3.1055900621vw , 3rem )) {
+@supports not (font-size: clamp( 1.625rem , -1.227484472rem  +  3.4161490683vw , 3rem )) {
   .header-registration__title {
-    font-size: calc(1.75rem + 1.25 * (100vw - 83.5rem) / 40.25);
+    font-size: calc(1.625rem + 1.375 * (100vw - 83.5rem) / 40.25);
   }
 }
 
-@supports (margin-bottom: clamp( 0.625rem , -0.9309006211rem  +  1.8633540373vw , 1.375rem )) {
+@supports (margin-bottom: clamp( 0.3125rem , -1.8916925466rem  +  2.6397515528vw , 1.375rem )) {
   .header-registration__title:not(:last-child) {
-    margin-bottom: clamp( 0.625rem , -0.9309006211rem  +  1.8633540373vw , 1.375rem );
+    margin-bottom: clamp( 0.3125rem , -1.8916925466rem  +  2.6397515528vw , 1.375rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 0.625rem , -0.9309006211rem  +  1.8633540373vw , 1.375rem )) {
+@supports not (margin-bottom: clamp( 0.3125rem , -1.8916925466rem  +  2.6397515528vw , 1.375rem )) {
   .header-registration__title:not(:last-child) {
-    margin-bottom: calc(0.625rem + 0.75 * (100vw - 83.5rem) / 40.25);
+    margin-bottom: calc(0.3125rem + 1.0625 * (100vw - 83.5rem) / 40.25);
   }
 }
 
@@ -768,15 +769,15 @@ body {
   }
 }
 
-@supports (margin-bottom: clamp( 0.9375rem , -0.3590838509rem  +  1.5527950311vw , 1.5625rem )) {
+@supports (margin-bottom: clamp( 0.625rem , -1.3198757764rem  +  2.3291925466vw , 1.5625rem )) {
   .form-body:not(:last-child) {
-    margin-bottom: clamp( 0.9375rem , -0.3590838509rem  +  1.5527950311vw , 1.5625rem );
+    margin-bottom: clamp( 0.625rem , -1.3198757764rem  +  2.3291925466vw , 1.5625rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 0.9375rem , -0.3590838509rem  +  1.5527950311vw , 1.5625rem )) {
+@supports not (margin-bottom: clamp( 0.625rem , -1.3198757764rem  +  2.3291925466vw , 1.5625rem )) {
   .form-body:not(:last-child) {
-    margin-bottom: calc(0.9375rem + 0.625 * (100vw - 83.5rem) / 40.25);
+    margin-bottom: calc(0.625rem + 0.9375 * (100vw - 83.5rem) / 40.25);
   }
 }
 
@@ -785,15 +786,15 @@ body {
   font-weight: 500;
 }
 
-@supports (font-size: clamp( 1.25rem , -0.0465838509rem  +  1.5527950311vw , 1.875rem )) {
+@supports (font-size: clamp( 1.125rem , -0.4309006211rem  +  1.8633540373vw , 1.875rem )) {
   .form-body__subtitle {
-    font-size: clamp( 1.25rem , -0.0465838509rem  +  1.5527950311vw , 1.875rem );
+    font-size: clamp( 1.125rem , -0.4309006211rem  +  1.8633540373vw , 1.875rem );
   }
 }
 
-@supports not (font-size: clamp( 1.25rem , -0.0465838509rem  +  1.5527950311vw , 1.875rem )) {
+@supports not (font-size: clamp( 1.125rem , -0.4309006211rem  +  1.8633540373vw , 1.875rem )) {
   .form-body__subtitle {
-    font-size: calc(1.25rem + 0.625 * (100vw - 83.5rem) / 40.25);
+    font-size: calc(1.125rem + 0.75 * (100vw - 83.5rem) / 40.25);
   }
 }
 
@@ -810,15 +811,15 @@ body {
           column-gap: 0.75rem;
 }
 
-@supports (margin-bottom: clamp( 1.25rem , 1.168699187rem  +  0.406504065vw , 1.5625rem )) {
+@supports (margin-bottom: clamp( 0.9375rem , 0.774898374rem  +  0.8130081301vw , 1.5625rem )) {
   .form-body__navigation:not(:last-child) {
-    margin-bottom: clamp( 1.25rem , 1.168699187rem  +  0.406504065vw , 1.5625rem );
+    margin-bottom: clamp( 0.9375rem , 0.774898374rem  +  0.8130081301vw , 1.5625rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 1.25rem , 1.168699187rem  +  0.406504065vw , 1.5625rem )) {
+@supports not (margin-bottom: clamp( 0.9375rem , 0.774898374rem  +  0.8130081301vw , 1.5625rem )) {
   .form-body__navigation:not(:last-child) {
-    margin-bottom: calc(1.25rem + 0.3125 * (100vw - 20rem) / 76.875);
+    margin-bottom: calc(0.9375rem + 0.625 * (100vw - 20rem) / 76.875);
   }
 }
 
@@ -896,7 +897,7 @@ body {
     -webkit-transform: translate(-100%, 0px);
         -ms-transform: translate(-100%, 0px);
             transform: translate(-100%, 0px);
-    padding-bottom: 42%;
+    padding-bottom: 48.5%;
     border-left: 0.0625rem solid #d2dcef;
   }
 
@@ -934,15 +935,15 @@ body {
 }
 
 @media (max-width: 85.375em) {
-@supports (padding-top: clamp( 1.875rem , 0.0036549708rem  +  2.9239766082vw , 2.5rem )) {
+@supports (padding-top: clamp( 1.25rem , -0.6213450292rem  +  2.9239766082vw , 1.875rem )) {
     .page-registration__body {
-      padding-top: clamp( 1.875rem , 0.0036549708rem  +  2.9239766082vw , 2.5rem );
+      padding-top: clamp( 1.25rem , -0.6213450292rem  +  2.9239766082vw , 1.875rem );
     }
 }
 
-@supports not (padding-top: clamp( 1.875rem , 0.0036549708rem  +  2.9239766082vw , 2.5rem )) {
+@supports not (padding-top: clamp( 1.25rem , -0.6213450292rem  +  2.9239766082vw , 1.875rem )) {
     .page-registration__body {
-      padding-top: calc(1.875rem + 0.625 * (100vw - 64rem) / 21.375);
+      padding-top: calc(1.25rem + 0.625 * (100vw - 64rem) / 21.375);
     }
 }
 
